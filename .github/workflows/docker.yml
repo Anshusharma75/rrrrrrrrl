@@ -14,3 +14,5 @@ jobs:
        echo "${{ secrets.DOCKERPASS }}" | docker login -u "${{ secrets.DOCKERUSER }}" --password-stdin
        docker build -t reaitten/tk:latest .
        docker push reaitten/tk:latest
+
+
